@@ -1,0 +1,30 @@
+{
+  "name": "meuingresso-backend",
+  "version": "1.0.0",
+  "description": "O backend do projeto meuingresso",
+  "main": "index.js",
+  "scripts": {
+    "run": "nodemon app.js",
+    "start": "nodemon app.js",
+    "db:table": "node database/table.js",
+    "db:seed": "node database/seed.js"
+  },
+  "type": "module",
+  "keywords": [
+    "ingresso",
+    "filmes nacionais",
+    "popular"
+  ],
+  "author": "Luís eduardo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

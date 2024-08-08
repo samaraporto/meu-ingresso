@@ -1,0 +1,137 @@
+/* Seções */
+section {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    padding: 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section:nth-of-type(odd) {
+    background-color: #2c3aba;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/* Seção 1 */
+
+.secao-1 .container div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+h1 {
+    font-size: 3.4rem;
+    color: #fff;
+}
+
+.secao-1 h2 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.secao-1 p {
+    font-size: 1.4rem;
+    width: 500px;
+}
+
+.secao-1 img {
+    width: 300px;
+}
+
+.depoimentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 600px;
+}
+
+.depoimentos h1 {
+    color: #000;
+} 
+
+.container > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.depoente > p {
+    margin-top: 16px;
+    text-align: center;
+}
+
+.depoente blockquote {
+    width: 400px;
+}
+
+.parcerias {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    text-align: center;
+    color: #fff;
+    background-color: #2c3aba;
+    height: 600px;
+}
+
+.parcerias ol {
+    list-style: none;
+}
+
+
+@media (max-width: 1000px) {
+    .secao-1 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }    
+}
+
+
+@media (max-width: 740px) {
+    /* Header */
+    header {
+        flex-direction: column;
+        height: 400px;
+        /* background-color: green; */
+
+        gap: 30px;
+        padding: 20px 0px;
+    }
+
+    header > div {
+        flex-direction: column;
+    }
+
+    header > div > nav > ul {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    header > div > nav > ul >li {
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .carrinho {
+        display: none;
+    }
+
+    header .carrinho-link {
+        display: block;
+    }
+    
+}

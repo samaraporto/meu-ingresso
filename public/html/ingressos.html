@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeuIngresso | Seu site para compra de ingresso com os melhores preços</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/ingressos.css">
+    <script src="../js/ingresso.js"></script>
+</head>
+
+<body>
+    <header>
+        <img src="../img/logo.png" alt="Logomarca">
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="#">Ingressos disponíveis</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+            <a href="#carrinho" class="carrinho">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="item-count">0</span>
+            </a>
+            <a class="carrinho-link" href="#">Carrinho</a>
+            <button>Login</button>
+        </div>
+    </header>
+    <section>
+        <h1>Ingressos disponíveis</h1>
+        <div class="filmes" id="filmes">
+        </div>
+    </section>
+
+    <section class="carrinho" id="carrinho">
+        <h1>Carrinho</h1>
+        <p id="total">Total: R$ 0,00</p>
+        <div class="carrinho-itens" id="carrinho-itens">
+            <!-- <div class="carrinho-item">
+                <p>Teste</p>
+                <input value="1">
+                <p class="preco">R$ 3.00</p>
+                <button>X</button>
+            </div> -->
+        </div>
+        <button id="finalizar-compra" disabled="true">Finalizar compra</button>
+    </section>
+</body>
+
+</html>

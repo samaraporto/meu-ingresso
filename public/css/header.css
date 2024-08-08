@@ -1,0 +1,117 @@
+:root {
+    font-size: 14px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 20px;
+}
+
+header > img {
+    width: 200px;
+    height: 40px;
+}
+
+header > div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+}
+
+header > div >  nav {
+    display: flex;
+    align-items: center;
+}
+
+header > div > nav > ul {
+    text-align: center;
+    justify-content: space-evenly;
+
+    display: flex;
+
+    height: 40px;
+    gap: 20px;
+}
+
+header > div> nav > ul > li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+header > div > nav > ul > li:nth-of-type(2) {
+    width: 150px;
+    /* flex-grow: 2; */
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header li:hover {
+    background-color: #2c3aba;
+    color: #fff;
+}
+
+header button {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    width: 80px;
+    height: 40px;
+    border: 1px solid #2c3aba;
+    border-radius: 50px;
+    background-color: #2c3aba;
+
+    cursor: pointer;
+}
+
+header i {
+    color: #2c3aba;
+    font-size: 18px;
+}
+
+header .carrinho {
+    position: relative;
+    width: 40px;
+
+    /* cursor: pointer; */
+}
+
+header .carrinho span {
+    position: absolute;
+    
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    font-weight: 700;
+    width: 20px;
+    height: 20px;
+
+    text-align: center;
+    
+    top: -10px;
+    left: 15px;
+}
+
+header .carrinho-link {
+    display: none;
+}
