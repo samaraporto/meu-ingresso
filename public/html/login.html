@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MeuIngresso | Seu site para compra de ingresso com os melhores preços</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="../css/header.css">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+</head>
+<body>
+    <header>
+        <img src="../img/logo.png" alt="Logomarca">
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="html/ingressos.html">Ingressos disponíveis</a></li>
+                    <li><a href="#">Sobre</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="carrinho">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="item-count">0</span>
+            </a>
+            <a class="carrinho-link" href="#">Carrinho</a>
+            <button>Login</button>
+        </div>
+    </header>
+    <div>
+        <form action="">
+            <label for="usuario">Usuário: </label>
+            <input type="text" id="usuario" name="usuario">
+            <label for="senha">Senha: </label>
+            <input type="password" name="senha" id="senha">
+
+            <p id="mensagemErro"></p>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <script src="../js/login.js"></script>
+</body>
+</html>

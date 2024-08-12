@@ -6,5 +6,8 @@ async function obterUsuarioPorEmail(email){
     const usuario = await db.get("select * from usuarios where nome = ?", [email])
     return usuario
 }
-
-export {obterUsuarioPorEmail}
+async function cadastrarUsuario(nome, senha){
+    const db = await dbPromise
+    await db.run('insert into usuarios (nome, senha) values (?, ?)',[nome, senha])
+}
+export {obterUsuarioPorEmail, cadastrarUsuario}
